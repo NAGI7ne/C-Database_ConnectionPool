@@ -98,10 +98,10 @@ ConnectionPool::ConnectionPool()
 bool ConnectionPool::parseJsonFile()
 {
 	std::cout << "... this is parse ..." << std::endl;
-	std::ifstream ifs("/home/nagine/itest2/ConnectionPool/src/dbconf.json");
-	//std::ifstream ifs("dbconf.json");
+	//std::ifstream ifs("/home/nagine/itest2/ConnectionPool/src/dbconf.json");
+	std::ifstream ifs("dbconf.json");
 
-	std::string line;
+	//std::string line;
 	// if (ifs.is_open()) {
     //     while (getline(ifs, line)) { // 按行读取
     //         std::cout << line << '\n';
@@ -110,7 +110,7 @@ bool ConnectionPool::parseJsonFile()
     // } else {
     //     std::cout << "Unable to open file" << '\n';
     // }
-	
+
 	Json::Reader rd;
 	Json::Value root;
 	rd.parse(ifs, root);
