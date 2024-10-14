@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/nagine/itest2/ConnectionPool/build",
+  "command": "/usr/bin/c++  -I/home/nagine/itest2/ConnectionPool/inc  -O0 -Wall -g2 -ggdb -std=gnu++20 -o CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.o -c /home/nagine/itest2/ConnectionPool/src/ConnectionPool.cpp",
+  "file": "/home/nagine/itest2/ConnectionPool/src/ConnectionPool.cpp",
+  "output": "CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.o"
+},
+{
+  "directory": "/home/nagine/itest2/ConnectionPool/build",
+  "command": "/usr/bin/c++  -I/home/nagine/itest2/ConnectionPool/inc  -O0 -Wall -g2 -ggdb -std=gnu++20 -o CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.o -c /home/nagine/itest2/ConnectionPool/src/MysqlConn.cpp",
+  "file": "/home/nagine/itest2/ConnectionPool/src/MysqlConn.cpp",
+  "output": "CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.o"
+},
+{
+  "directory": "/home/nagine/itest2/ConnectionPool/build",
+  "command": "/usr/bin/c++  -I/home/nagine/itest2/ConnectionPool/inc  -O0 -Wall -g2 -ggdb -std=gnu++20 -o CMakeFiles/pool_multithread.dir/src/main.cpp.o -c /home/nagine/itest2/ConnectionPool/src/main.cpp",
+  "file": "/home/nagine/itest2/ConnectionPool/src/main.cpp",
+  "output": "CMakeFiles/pool_multithread.dir/src/main.cpp.o"
+}
+]

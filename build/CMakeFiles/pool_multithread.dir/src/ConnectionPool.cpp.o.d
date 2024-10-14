@@ -1,4 +1,4 @@
-CMakeFiles/nopool_singlethread.dir/src/ConnectionPool.cpp.o: \
+CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.o: \
  /home/nagine/itest2/ConnectionPool/src/ConnectionPool.cpp \
  /usr/include/stdc-predef.h \
  /home/nagine/itest2/ConnectionPool/inc/ConnectionPool.h \

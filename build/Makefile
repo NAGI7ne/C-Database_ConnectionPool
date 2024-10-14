@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nopool_singlethread
+# Target rules for targets named pool_multithread
 
 # Build rule for target.
-nopool_singlethread: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nopool_singlethread
-.PHONY : nopool_singlethread
+pool_multithread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pool_multithread
+.PHONY : pool_multithread
 
 # fast build rule for target.
-nopool_singlethread/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/build
-.PHONY : nopool_singlethread/fast
+pool_multithread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/build
+.PHONY : pool_multithread/fast
 
 src/ConnectionPool.o: src/ConnectionPool.cpp.o
 .PHONY : src/ConnectionPool.o
 
 # target to build an object file
 src/ConnectionPool.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/ConnectionPool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.o
 .PHONY : src/ConnectionPool.cpp.o
 
 src/ConnectionPool.i: src/ConnectionPool.cpp.i
@@ -142,7 +142,7 @@ src/ConnectionPool.i: src/ConnectionPool.cpp.i
 
 # target to preprocess a source file
 src/ConnectionPool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/ConnectionPool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.i
 .PHONY : src/ConnectionPool.cpp.i
 
 src/ConnectionPool.s: src/ConnectionPool.cpp.s
@@ -150,7 +150,7 @@ src/ConnectionPool.s: src/ConnectionPool.cpp.s
 
 # target to generate assembly for a file
 src/ConnectionPool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/ConnectionPool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/ConnectionPool.cpp.s
 .PHONY : src/ConnectionPool.cpp.s
 
 src/MysqlConn.o: src/MysqlConn.cpp.o
@@ -158,7 +158,7 @@ src/MysqlConn.o: src/MysqlConn.cpp.o
 
 # target to build an object file
 src/MysqlConn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/MysqlConn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.o
 .PHONY : src/MysqlConn.cpp.o
 
 src/MysqlConn.i: src/MysqlConn.cpp.i
@@ -166,7 +166,7 @@ src/MysqlConn.i: src/MysqlConn.cpp.i
 
 # target to preprocess a source file
 src/MysqlConn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/MysqlConn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.i
 .PHONY : src/MysqlConn.cpp.i
 
 src/MysqlConn.s: src/MysqlConn.cpp.s
@@ -174,7 +174,7 @@ src/MysqlConn.s: src/MysqlConn.cpp.s
 
 # target to generate assembly for a file
 src/MysqlConn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/MysqlConn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.s
 .PHONY : src/MysqlConn.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -182,7 +182,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -190,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -198,7 +198,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nopool_singlethread.dir/build.make CMakeFiles/nopool_singlethread.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pool_multithread.dir/build.make CMakeFiles/pool_multithread.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... nopool_singlethread"
+	@echo "... pool_multithread"
 	@echo "... src/ConnectionPool.o"
 	@echo "... src/ConnectionPool.i"
 	@echo "... src/ConnectionPool.s"

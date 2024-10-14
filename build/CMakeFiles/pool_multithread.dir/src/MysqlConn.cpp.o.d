@@ -1,4 +1,4 @@
-CMakeFiles/nopool_singlethread.dir/src/MysqlConn.cpp.o: \
+CMakeFiles/pool_multithread.dir/src/MysqlConn.cpp.o: \
  /home/nagine/itest2/ConnectionPool/src/MysqlConn.cpp \
  /usr/include/stdc-predef.h \
  /home/nagine/itest2/ConnectionPool/inc/MysqlConn.h \

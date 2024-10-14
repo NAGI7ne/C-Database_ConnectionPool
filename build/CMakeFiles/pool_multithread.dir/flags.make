@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/nagine/itest2/ConnectionPool/inc
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS =  -O0 -Wall -g2 -ggdb -std=gnu++20
 
