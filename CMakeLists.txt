@@ -13,8 +13,8 @@ include_directories(${PROJECT_SOURCE_DIR}/inc)
 set(EXECUTABLE_OUTPUT_PATH ../bin)
 
 #输出可执行文件
-add_executable(dbConnPool ${SRC})
+add_executable(nopool_singlethread ${SRC})
 
 #连接动态库
-target_link_libraries(dbConnPool jsoncpp)
-target_link_libraries(dbConnPool libmysqlclient.so)
+target_link_libraries(nopool_singlethread jsoncpp)
+target_link_libraries(nopool_singlethread libmysqlclient.so)

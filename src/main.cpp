@@ -54,7 +54,7 @@ void test1() {   //单线程
 
 void test2() {   //多线程
 
-#if 1
+#if 0
 	//非连接池，多线程，用时：11846121900 纳秒, 11846毫秒
 	MysqlConn conn;
 	conn.connect("root", "miku39", "test", "192.168.160.129");
@@ -119,7 +119,7 @@ void query() {
 
 int main() {
 
-	test2();
+	test1();
 
 	return 0;
 }
