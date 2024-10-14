@@ -12,6 +12,10 @@ SET(CMAKE_EXPORT_COMPILE_COMMANDS ON )
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC)
 include_directories(${PROJECT_SOURCE_DIR}/inc)
 
+#使用 configure_file 将 JSON 文件复制到构建目录
+configure_file(${CMAKE_SOURCE_DIR}/dbconf.json ${CMAKE_BINARY_DIR}/dbconf.json COPYONLY)
+
+
 #输出可执行文件路径
 set(EXECUTABLE_OUTPUT_PATH ../bin)
 
