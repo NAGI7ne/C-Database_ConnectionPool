@@ -1,0 +1,3 @@
+/home/nagine/itest2/ConnectionPool/build/CMakeFiles/nopool_singlethread.dir
+/home/nagine/itest2/ConnectionPool/build/CMakeFiles/edit_cache.dir
+/home/nagine/itest2/ConnectionPool/build/CMakeFiles/rebuild_cache.dir
