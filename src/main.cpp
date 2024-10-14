@@ -1,5 +1,6 @@
 #include "MysqlConn.h"
 #include "ConnectionPool.h"
+#include <thread>
 
 using namespace std;
 using namespace chrono;
@@ -27,8 +28,7 @@ void op2(ConnectionPool* pool, int begin, int end) {   //使用连接池
 
 void test1() {   //单线程
 
-#if 1
-	//非连接池，单线程，用时：34200382800 纳秒, 34200毫秒
+#if 0
 	steady_clock::time_point begin = steady_clock::now();
 	op1(0, 5000);
 	steady_clock::time_point end = steady_clock::now();
@@ -38,7 +38,6 @@ void test1() {   //单线程
 		<< length.count() / 1000000 << "毫秒" << endl;
 
 #else
-	//连接池，单线程，用时：6165706600 纳秒, 6165毫秒
 	ConnectionPool* pool = ConnectionPool::getConnectPool();
 
 	steady_clock::time_point begin = steady_clock::now();
@@ -55,7 +54,6 @@ void test1() {   //单线程
 void test2() {   //多线程
 
 #if 0
-	//非连接池，多线程，用时：11846121900 纳秒, 11846毫秒
 	MysqlConn conn;
 	conn.connect("root", "miku39", "test", "192.168.160.129");
 	steady_clock::time_point begin = steady_clock::now();
@@ -76,7 +74,6 @@ void test2() {   //多线程
 		<< length.count() / 1000000 << "毫秒" << endl;
 
 #else
-	//连接池，多线程，用时：2880769600 纳秒, 2880毫秒
 	ConnectionPool* pool = ConnectionPool::getConnectPool();
 	steady_clock::time_point begin = steady_clock::now();
 	thread t1(op2, pool, 0, 1000);
@@ -119,7 +116,7 @@ void query() {
 
 int main() {
 
-	test1();
+	test2();
 
 	return 0;
 }
