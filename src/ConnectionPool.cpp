@@ -3,6 +3,7 @@
 #include <fstream>
 #include <thread>
 #include <chrono>
+using namespace Json;
 
 ConnectionPool* ConnectionPool::getConnectPool()
 {
@@ -96,10 +97,24 @@ ConnectionPool::ConnectionPool()
 
 bool ConnectionPool::parseJsonFile()
 {
-	std::ifstream ifs("dbconf.json");
+	std::cout << "... this is parse ..." << std::endl;
+	std::ifstream ifs("/home/nagine/itest2/ConnectionPool/src/dbconf.json");
+	//std::ifstream ifs("dbconf.json");
+
+	std::string line;
+	// if (ifs.is_open()) {
+    //     while (getline(ifs, line)) { // 按行读取
+    //         std::cout << line << '\n';
+    //     }
+    //     ifs.close();
+    // } else {
+    //     std::cout << "Unable to open file" << '\n';
+    // }
+	
 	Json::Reader rd;
 	Json::Value root;
 	rd.parse(ifs, root);
+
 	if (root.isObject()) {
 		m_ip = root["ip"].asString();
 		m_port = root["port"].asInt();
@@ -110,9 +125,10 @@ bool ConnectionPool::parseJsonFile()
 		m_maxsize = root["maxsize"].asInt();
 		m_maxIdleTime = root["maxIdleTime"].asInt();
 		m_timeout = root["timeout"].asInt();
+		std::cout << "... parse down ..." << std::endl;
 		return true;
 	}
-
+	std::cout << "... parse false ..." << std::endl;
 	return false;
 }
 
