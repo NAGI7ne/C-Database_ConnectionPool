@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include<mysql.h>
+#include<mysql/mysql.h>
 #include<chrono>
 #include<mutex>
 
