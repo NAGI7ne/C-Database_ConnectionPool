@@ -10,7 +10,7 @@ void op1(int begin, int end) {   //不使用连接池
 		MysqlConn conn;
 		conn.connect("root", "miku39", "test", "192.168.160.129");
 		char sql[1024] = { 0 };
-		sprintf_s(sql, "insert into test values(%d, 18, 'woman', 'hachi')", i);
+		sprintf(sql, "insert into test values(%d, 18, 'woman', 'hachi')", i);
 		conn.update(sql);
 	}
 }
@@ -20,7 +20,7 @@ void op2(ConnectionPool* pool, int begin, int end) {   //使用连接池
 	for (int i = begin; i < end; i++) {
 		shared_ptr<MysqlConn> conn = pool->getConnection();
 		char sql[1024] = { 0 };
-		sprintf_s(sql, "insert into test values(%d, 18, 'woman', 'hachi')", i);
+		sprintf(sql, "insert into test values(%d, 18, 'woman', 'hachi')", i);
 		conn->update(sql);
 	}
 }
