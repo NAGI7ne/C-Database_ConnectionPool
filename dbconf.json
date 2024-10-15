@@ -2,7 +2,7 @@
   "ip":"192.168.160.129",
   "port":3306,
   "username":"root",
-  "password":"miku39",
+  "password":"123456",
   "dbname":"test",
   "minsize":100,
   "mansize":1024,
